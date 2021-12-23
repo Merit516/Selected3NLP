@@ -5,11 +5,12 @@ from csv import writer
 import csv
 from nltk.tokenize import word_tokenize
 ###################################################
-from ar_corrector.corrector import Corrector
+#from ar_corrector.corrector import Corrector
+"""
 def autoCorrect(str):
     corr = Corrector()
     return corr.contextual_correct(str)
-
+"""
 
 def getBookTitle(URL):
         regex = r"[\"PDF\"]"
