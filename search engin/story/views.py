@@ -44,8 +44,8 @@ def load_dataset():
     documents_clean=[]
 
     for i in range(data.shape[0]) :
-
-        s=  str('\n')+str(data['Title'][i]) + str('\n')+ str(data['Author'][i])+ str('\n')+ str(data['section'][i])+ str('\n')+ str(data['DarAlNasher'][i])+ str('\n')+ str(data['NumberOfPages'][i])+ str('\n')+ str(data['book_size'][i])
+        #s = str('\n')+str(data['id'][i]) +str('\n')+str(data['content_type'][i])+str('\n')+str(data['content'][i])
+        s= str('\n')+str(data['Title'][i]) + str('\n')+ str(data['Author'][i])+ str('\n')+ str(data['section'][i])+ str('\n')+ str(data['DarAlNasher'][i])+ str('\n')+ str(data['NumberOfPages'][i])+ str('\n')+ str(data['book_size'][i])
         documents_clean.append(s)
     return documents_clean
 
