@@ -56,7 +56,7 @@ def getBookwriter(URL):
     return info
 def getDescription(URL):
     regex = r"[\"PDF\"]"
-    url = "https://www.arab-books.com/books/%d9%83%d8%aa%d8%a7%d8%a8-%d9%85%d8%ac%d9%84%d8%a9-%d9%85%d9%8a%d9%83%d9%8a-%d8%a7%d9%84%d8%b9%d8%af%d8%af-896-pdf/"
+    url = URL
     info = []
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
@@ -134,7 +134,7 @@ def bookSize(URL):
     print(a)
     return info
 def remove_stopwords(data):
-    file = open("D:/github/Selected3NLP/dat.txt", "r", encoding="utf-8")
+    file = open("C:/Users/MeritMekhail/OneDrive/Desktop/nlp1pro/Selected3NLP/dat.txt", "r", encoding="utf-8")
     stop_words = []
     for line in file:
         line_strip = line.strip()
@@ -190,7 +190,7 @@ def Description(URL):
 
     return ddd
 
-Description("https://www.arab-books.com/books/%d9%83%d8%aa%d8%a7%d8%a8-%d8%a3%d8%b4%d8%b9%d8%a9-%d8%a7%d9%84%d9%85%d9%88%d8%aa-pdf/")
+#Description("https://www.arab-books.com/books/%d9%83%d8%aa%d8%a7%d8%a8-%d8%a3%d8%b4%d8%b9%d8%a9-%d8%a7%d9%84%d9%85%d9%88%d8%aa-pdf/")
 
 def getDescription1(URL):
     regex = r"[\"PDF\"]"
