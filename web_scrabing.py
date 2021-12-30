@@ -125,7 +125,7 @@ def bookSize(URL,r):
     return info
 
 def remove_stopwords(data):
-    file = open("D:/github/Selected3NLP/dat.txt", "r", encoding="utf-8")
+    file = open("C:/Users/MeritMekhail/OneDrive/Desktop/nlp1pro/Selected3NLP/dat.txt", "r", encoding="utf-8")
     stop_words = []
     for line in file:
         line_strip = line.strip()
@@ -195,7 +195,7 @@ size=[]
 udesc=[]
 sdesc=[]
 s = 1
-while i < 2:
+while i <111:
 
     url = f"https://www.arab-books.com//page/{i}"
     r = requests.get(url)
@@ -222,7 +222,7 @@ for c in a:
 
 print(sect)
 
-with open('sas.csv','w', encoding='utf-8-sig', newline='') as f:
+with open('data110.csv','w', encoding='utf-8-sig', newline='') as f:
     print("file create or open")
     thewriter = writer(f)
     header = ['Author','Title','section','num_of_pages','Dar_elNasher','book_size','sours_Description','word_Description']
